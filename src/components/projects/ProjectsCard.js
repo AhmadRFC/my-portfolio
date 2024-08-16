@@ -40,7 +40,7 @@ const ProjectsCard = ({ title, des, src, github, technologies }) => {
             View Code
           </a>
           <a
-            href="#"
+            // href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200"

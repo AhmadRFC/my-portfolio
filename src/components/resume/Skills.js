@@ -4,7 +4,7 @@ import { Code, Database, Globe, Server, Check, Settings, Cpu } from 'lucide-reac
 const skillsData = [
   { 
     category: "Languages", 
-    items: ["Java", "Python", "JavaScript", "HTML", "CSS"], 
+    items: ["Java", "Python", "JavaScript"], 
     icon: <Code className="w-6 h-6 mr-2" />
   },
   { 
@@ -26,12 +26,7 @@ const skillsData = [
     category: "Methodologies", 
     items: ["Agile Methodologies"], 
     icon: <Settings className="w-6 h-6 mr-2" />
-  },
-  { 
-    category: "Technologies", 
-    items: ["Generative AI"], 
-    icon: <Cpu className="w-6 h-6 mr-2" />
-  },
+  }
 ];
 
 const SkillCard = ({ category, items, icon }) => (
