@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { Suspense, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -21,6 +21,22 @@ const pageTransition = {
   duration: 0.5
 };
 
+const RedirectComponent = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  useEffect(() => {
+    const path = new URLSearchParams(location.search).get('p');
+    if (path) {
+      navigate(path);
+    } else if (location.pathname === '/') {
+      navigate('/home');
+    }
+  }, [navigate, location]);
+
+  return null;
+};
+
 const App = () => {
   return (
     <Router>
@@ -29,30 +45,53 @@ const App = () => {
         <main className="flex-grow flex flex-col">
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              {["", "home", "projects", "resume"].map((path, index) => (
-                <Route
-                  key={path}
-                  path={path === "" ? "/" : `/${path}`}
-                  element={
-                    <motion.div
-                      className="flex-grow flex flex-col"
-                      initial="initial"
-                      animate="in"
-                      exit="out"
-                      variants={pageVariants}
-                      transition={pageTransition}
-                    >
-                      {path === "" || path === "home" ? (
-                        <Home />
-                      ) : path === "projects" ? (
-                        <Projects />
-                      ) : (
-                        <Resume />
-                      )}
-                    </motion.div>
-                  }
-                />
-              ))}
+              <Route path="/" element={<RedirectComponent />} />
+              <Route
+                path="/home"
+                element={
+                  <motion.div
+                    className="flex-grow flex flex-col"
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <Home />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/projects"
+                element={
+                  <motion.div
+                    className="flex-grow flex flex-col"
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <Projects />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/resume"
+                element={
+                  <motion.div
+                    className="flex-grow flex flex-col"
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <Resume />
+                  </motion.div>
+                }
+              />
+              <Route path="*" element={ <Navigate to="/home" replace />} />
             </Routes>
           </Suspense>
         </main>

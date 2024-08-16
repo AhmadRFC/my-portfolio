@@ -18,7 +18,7 @@ const Projects = () => {
       description: "A scheduling processing solver that takes process details from a text file and calculates optimal scheduling based on various algorithms.",
       image: prjTwo,
       github: "https://github.com/PriceGrab/pricegrab",
-      technologies: ["Python", "Algorithms", "Data Structures"]
+      technologies: ["Java", "Algorithms", "Data Structures"]
     }
   ];
 

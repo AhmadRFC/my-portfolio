@@ -27,14 +27,22 @@ const Navbar = () => {
     };
   }, []);
 
-  return (
+  const isActive = (path) => {
+    const currentPath = location.pathname;
+    if (path === "/") {
+      return currentPath === "/" || currentPath === "/home";
+    }
+    return currentPath === path;
+  };
 
+  return (
     <motion.nav 
-    className={`fixed w-full z-50 transition-all duration-300 ${navbar ? "bg-white shadow-md" : "bg-transparent"}`}
-    initial={{ opacity: 0, y: -50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-  >      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      className={`fixed w-full z-50 transition-all duration-300 ${navbar ? "bg-white shadow-md" : "bg-transparent"}`}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/">
@@ -48,7 +56,7 @@ const Navbar = () => {
                   key={_id}
                   to={link}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === link
+                    isActive(link)
                       ? "text-white bg-gray-900"
                       : "text-gray-700 hover:bg-gray-700 hover:text-white"
                   }`}
