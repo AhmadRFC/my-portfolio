@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6"
 import { navLinksdata } from "../../utils/constants";
 import logo from '../../assets/images/logo.png';
 
@@ -60,7 +61,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <a href="https://twitter.com/AhmadRFC" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
-                <FaTwitter />
+                <FaSquareXTwitter />
               </a>
               <a href="https://www.linkedin.com/in/ahmad-alabbasei-13086326b/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
                 <FaLinkedin />

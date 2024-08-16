@@ -5,10 +5,10 @@ import Interest from "../components/home/interest";
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col flex-grow">
       <motion.section
         id="home"
-        className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
+        className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

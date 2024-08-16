@@ -6,7 +6,10 @@ const ProjectsCard = ({ title, des, src, github, technologies }) => {
   return (
     <motion.div
       className="bg-white rounded-lg shadow-lg overflow-hidden"
-      whileHover={{ y: -5 }}
+      whileHover={{ 
+        y: -5,
+        boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
+      }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       <img
