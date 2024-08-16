@@ -1,167 +1,69 @@
-import React from 'react'
-// import { motion } from 'framer-motion';
+import React from 'react';
+import { Code, Database, Globe, Server, Check, Settings, Cpu } from 'lucide-react';
+
+const skillsData = [
+  { 
+    category: "Languages", 
+    items: ["Java", "Python", "JavaScript", "HTML", "CSS"], 
+    icon: <Code className="w-6 h-6 mr-2" />
+  },
+  { 
+    category: "Databases", 
+    items: ["PostgreSQL", "MongoDB"], 
+    icon: <Database className="w-6 h-6 mr-2" />
+  },
+  { 
+    category: "Frameworks & Libraries", 
+    items: ["Node.js", "ReactJS", "Flutter"], 
+    icon: <Globe className="w-6 h-6 mr-2" />
+  },
+  { 
+    category: "Tools & Platforms", 
+    items: ["Git", "GitHub", "VS Code", "IntelliJ IDEA", "Jupyter Notebook", "Trello"], 
+    icon: <Server className="w-6 h-6 mr-2" />
+  },
+  { 
+    category: "Methodologies", 
+    items: ["Agile Methodologies"], 
+    icon: <Settings className="w-6 h-6 mr-2" />
+  },
+  { 
+    category: "Technologies", 
+    items: ["Generative AI"], 
+    icon: <Cpu className="w-6 h-6 mr-2" />
+  },
+];
+
+const SkillCard = ({ category, items, icon }) => (
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex items-center mb-4">
+        <span className="text-blue-500 mr-3">{icon}</span>
+        <h3 className="text-xl font-semibold text-gray-800">{category}</h3>
+      </div>
+      <ul className="space-y-2">
+        {items.map((item, index) => (
+          <li key={index} className="flex items-center text-gray-600">
+            <Check className="w-4 h-4 text-green-500 mr-2" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
 const Skills = () => {
   return (
-    <div>Coming soon...</div>
-    // <motion.div
-    //   initial={{ opacity: 0 }}
-    //   animate={{ opacity: 1, transition: { duration: 0.5 } }}
-    //   className="w-full flex flex-col lg:flex-row gap-10 lg:gap-20"
-    // >
-    //   <div className="w-full lg:w-1/2">
-    //     <div className="py-12 font-titleFont flex flex-col gap-4">
-    //       <p className="text-sm text-designColor tracking-[4px] uppercase">
-    //         Features
-    //       </p>
-    //       <h2 className="text-3xl md:text-4xl font-bold">Design Skill</h2>
-    //     </div>
-    //     <div className='className="mt-14 w-full flex flex-col gap-6'>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">100%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">90%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[60%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">60%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[70%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">70%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Design</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">95%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   <div className="w-full lg:w-1/2">
-    //     <div className="py-12 font-titleFont flex flex-col gap-4">
-    //       <p className="text-sm text-designColor tracking-[4px] uppercase">
-    //         Features
-    //       </p>
-    //       <h2 className="text-3xl md:text-4xl font-bold">Development Skill</h2>
-    //     </div>
-    //     <div className="flex flex-col gap-6">
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">React</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">100%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">95%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">80%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[75%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">75%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //       <div className="overflow-x-hidden">
-    //         <p className="text-sm uppercase font-medium">Skill-title</p>
-    //         <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-    //           <motion.span
-    //             initial={{ x: "-100%", opacity: 0 }}
-    //             animate={{ x: 0, opacity: 1 }}
-    //             transition={{ duration: 0.5, delay: 0.5 }}
-    //             className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-    //           >
-    //             <span className="absolute -top-7 right-0">90%</span>
-    //           </motion.span>
-    //         </span>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </motion.div>
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">My Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillsData.map((skill, index) => (
+            <SkillCard key={index} {...skill} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
-export default Skills
+export default Skills;
