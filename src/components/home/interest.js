@@ -1,27 +1,36 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AiFillAppstore } from "react-icons/ai";
-import { FaGlobe } from "react-icons/fa";
-import { PiInfinityBold } from "react-icons/pi";
+import { FaCode, FaRobot, FaMobileAlt, FaHome } from "react-icons/fa";
+import { GiDeliveryDrone } from "react-icons/gi";
 import Card from "./Card";
 
 const Interest = () => {
   const interests = [
     {
-      title: "Web Development",
-      description: "I am passionate about full-stack web development. I enjoy building modern and dynamic web applications, leveraging robust databases, flexible server-side frameworks, and rich front-end libraries to craft efficient and scalable solutions.",
-      icon: <FaGlobe />,
+      title: "Software Development",
+      description: "I enjoy developing efficient software solutions across multiple programming languages and frameworks. My background includes web and mobile app development, with a focus on practical design and functionality.",
+      icon: <FaCode />,
     },
     {
-      title: "DevOps",
-      description: "I am fascinated by the role of DevOps in bridging the gap between development and operations. With a strong focus on automation, collaboration, and continuous improvement, I am driven to optimize workflows and enhance the overall software development lifecycle.",
-      icon: <PiInfinityBold />,
+      title: "AI and Machine Learning",
+      description: "I like using AI and ML technologies to help with complex challenges and improve decision-making. I've worked on developing generative AI tools and have been involved in some forward-thinking projects in this area.",
+      icon: <FaRobot />,
     },
     {
-      title: "IT Project Management",
-      description: "IT Project Management holds a special place in my journey, shaped by my experiences in diverse technology projects. The opportunity to lead teams and deliver impactful results drives my passion for IT Project Management.",
-      icon: <AiFillAppstore />,
+      title: "Mobile App Development",
+      description: "I'm into developing cross-platform mobile apps. I use Flutter and integrate various APIs and SDKs to create apps that have many features.",
+      icon: <FaMobileAlt />,
     },
+    {
+      title: "IoT and Home Automation",
+      description: "I'm interested in the Internet of Things (IoT) and home automation. I work on Arduino projects and develop smart home solutions.",
+      icon: <FaHome />,
+    },
+    {
+      title: "Drone Flying",
+      description: "I've recently started flying drones and have been really enjoying the experience. It's fun to explore different perspectives from above and experiment with aerial photography.",
+      icon: <GiDeliveryDrone />,
+    }
   ];
 
   return (

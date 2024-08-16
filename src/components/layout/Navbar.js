@@ -81,6 +81,9 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        <div className="text-center text-sm text-gray-500 bg-yellow-100 py-1 px-2 rounded-b-md">
+          🚧 This portfolio is under development. Updates coming soon! 🚧
+        </div>
       </div>
 
       <motion.div

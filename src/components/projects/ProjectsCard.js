@@ -5,18 +5,20 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const ProjectsCard = ({ title, des, src, github, technologies }) => {
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-lg overflow-hidden"
-      whileHover={{ 
+      className="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto"
+      whileHover={{
         y: -5,
         boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
       }}
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <img
-        className="w-full h-48 object-cover"
-        src={src}
-        alt={title}
-      />
+      <div className="h-48 overflow-hidden">
+        <img
+          className="w-full h-full object-cover object-center"
+          src={src}
+          alt={title}
+        />
+      </div>
       <div className="p-4 sm:p-6">
         <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600 text-sm sm:text-base mb-4">{des}</p>
