@@ -22,7 +22,7 @@ const Footer = () => {
                 <FaSquareXTwitter />
               </span>
             </a>
-            <a href="https://www.linkedin.com/in/ahmad-alabbasei-13086326b/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/alabbasei/" target="_blank" rel="noreferrer">
               <span className="w-12 h-12 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne transform hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300">
                 <FaLinkedin />
               </span>

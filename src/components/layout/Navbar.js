@@ -63,7 +63,7 @@ const Navbar = () => {
               <a href="https://twitter.com/AhmadRFC" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
                 <FaSquareXTwitter />
               </a>
-              <a href="https://www.linkedin.com/in/ahmad-alabbasei-13086326b/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
+              <a href="https://www.linkedin.com/in/alabbasei/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
                 <FaLinkedin />
               </a>
               <a href="https://github.com/AhmadRFC" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 px-3 py-2">
@@ -125,7 +125,7 @@ const Navbar = () => {
               Twitter
             </a>
             <a
-              href="https://www.linkedin.com/in/ahmad-alabbasei-13086326b/"
+              href="https://www.linkedin.com/in/alabbasei/"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-700"

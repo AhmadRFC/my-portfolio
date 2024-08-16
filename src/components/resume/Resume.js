@@ -18,20 +18,20 @@ const Resume = () => {
             <div className="inline-flex rounded-md shadow-sm mb-4" role="group">
               <button
                 onClick={() => setActiveTab("education")}
-                className={`px-4 py-2 text-sm font-medium rounded-l-lg transition-colors duration-200 ${
+                className={`px-4 py-2 mr-4 text-sm font-medium rounded-full rounded-l-lg transition-colors duration-200 ${
                   activeTab === "education"
                       ? "text-white bg-gray-900"
-                      : "text-gray-700 hover:bg-gray-700 hover:text-white"
+                      : "text-gray-400 hover:text-gray-900"
                 }`}
               >
                 Education & Experience
               </button>
               <button
                 onClick={() => setActiveTab("skills")}
-                className={`px-4 py-2 text-sm font-medium rounded-r-lg transition-colors duration-200 ${
+                className={`px-4 py-2 text-sm font-medium rounded-full rounded-r-lg transition-colors duration-200 ${
                   activeTab === "skills"
                       ? "text-white bg-gray-900"
-                      : "text-gray-700 hover:bg-gray-700 hover:text-white"
+                      : "text-gray-400 hover:text-gray-900"
                 }`}
               >
                 Professional Skills

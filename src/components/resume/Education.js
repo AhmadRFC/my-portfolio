@@ -13,7 +13,7 @@ const Education = () => {
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Education</h2>
         <ResumeCard
           title="BSc in Information Technology"
-          subTitle="King Abdulaziz University 2019 - 2024 (Expected)"
+          subTitle="King Abdulaziz University 09/2019 - 08/2024"
           result="GPA: 4.91/5"
           des="Currently pursuing a Bachelor's degree in Information Technology at King Abdulaziz University, (Software Engineering track). Focused on gaining comprehensive knowledge and skills in software development, web technologies, database management, and IT project management. Emphasizing practical application and problem-solving in real-world scenarios."
         />
@@ -25,13 +25,13 @@ const Education = () => {
         </h2>
         <ResumeCard
           title="AI and Machine Learning Intern"
-          subTitle="Aramco - (August 2023 - December 2023)"
+          subTitle="Aramco 08/2023 - 12/2023"
           result="Dharan - Saudi Arabia"
           des="Designed & implemented technology solutions, including automating the certification process for +200 program participants & managed Zoom webinars. Managed on-campus events & engaged with students face-to-face. Created and maintained the program documentation, including schedules, budgets, and reports."
         />
         <ResumeCard
           title="KAU Innovators"
-          subTitle="Coordinator - (May 2021 – March 2022)"
+          subTitle="Coordinator 05/2021 – 04/2022"
           result="Jeddah, SA"
           des="Designed & implemented technology solutions, including automating the certification process for +200 program participants & managed Zoom webinars. Managed on-campus events & engaged with students face-to-face. Created and maintained the program documentation, including schedules, budgets, and reports."
         />
