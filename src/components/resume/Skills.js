@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Globe, Server, Check, Settings, Cpu } from 'lucide-react';
+import { Code, Database, Globe, Server, Check, Settings } from 'lucide-react';
 
 const skillsData = [
   { 

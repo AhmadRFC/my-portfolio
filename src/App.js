@@ -42,7 +42,7 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow flex flex-col">
+        <main className="flex-grow flex flex-col mt-6">
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<RedirectComponent />} />
