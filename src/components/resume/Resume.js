@@ -8,7 +8,7 @@ const Resume = () => {
   const [activeTab, setActiveTab] = useState("education");
 
   return (
-    <section id="resume" className="w-full py-20 bg-gray-100">
+    <section id="resume" className="w-full py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <Title title="Resume 📝" />

@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div 
       className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center" 
-      style={{ paddingTop: '1.5rem' }} // Inline style for padding
+      style={{ paddingTop: '1.5rem' }}
     >      <AnimatedSection className="w-full lg:w-1/2 p-4 lg:p-8">
         <LeftBanner />
       </AnimatedSection>

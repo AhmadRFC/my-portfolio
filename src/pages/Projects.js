@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Pricegrab",
-      description: "An online shopping tool that helps you find products by searching various websites. It aggregates prices and details from multiple sources to help users make informed decisions.",
+      description: "An online shopping tool that finds products across websites, aggregating prices and details from multiple sources to help users make informed decisions.",
       image: prjOne,
       github: "https://github.com/AhmadRFC/process_scheduling_solver",
       technologies: ["Java", "PostgreSQL", "REST API"]
@@ -23,7 +23,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center text-gray-800 mb-12 mt-10"
