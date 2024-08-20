@@ -14,4 +14,10 @@ export const navLinksdata = [
       title: "Projects",
       link: "/projects",
     },
+    {
+      _id: 1004,
+      title: "Drone Photography",
+      link: "/drone-photography",
+    },
   ];
+  

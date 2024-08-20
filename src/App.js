@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation, Navig
 import { motion } from "framer-motion";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import DronePhotography from "./components/home/DronePhotography";
 import './output.css';
 
 // Lazy load pages
@@ -89,6 +90,21 @@ const App = () => {
                     transition={pageTransition}
                   >
                     <Resume />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/drone-photography"
+                element={
+                  <motion.div
+                    className="flex-grow flex flex-col"
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}
+                  >
+                    <DronePhotography />
                   </motion.div>
                 }
               />
