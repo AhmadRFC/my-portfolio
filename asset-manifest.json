@@ -1,26 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.189bf113.css",
-    "main.js": "/static/js/main.5ffb4c91.js",
+    "main.js": "/static/js/main.d09d9447.js",
     "static/js/105.2d4e178e.chunk.js": "/static/js/105.2d4e178e.chunk.js",
     "static/js/225.6ffd6c68.chunk.js": "/static/js/225.6ffd6c68.chunk.js",
-    "static/js/877.3fba6e7a.chunk.js": "/static/js/877.3fba6e7a.chunk.js",
+    "static/js/487.f743d523.chunk.js": "/static/js/487.f743d523.chunk.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/js/469.dabb823a.chunk.js": "/static/js/469.dabb823a.chunk.js",
+    "static/media/King Abdulaziz University logo.png": "/static/media/King Abdulaziz University logo.351d8a7034e30b66f8ba.png",
     "static/media/logo.png": "/static/media/logo.966365a6ffde70af8e96.png",
+    "static/media/Aramco_logo.png": "/static/media/Aramco_logo.76cc42c3913a5d9f0659.png",
     "static/media/prjTwo.png": "/static/media/prjTwo.7271bea77ad259a854ae.png",
     "static/media/prjOne.png": "/static/media/prjOne.0f9615d4ffe99b8e872d.png",
+    "static/media/gdsc_logo.png": "/static/media/gdsc_logo.ada8a676e75ac21b7982.png",
     "index.html": "/index.html",
     "main.189bf113.css.map": "/static/css/main.189bf113.css.map",
-    "main.5ffb4c91.js.map": "/static/js/main.5ffb4c91.js.map",
+    "main.d09d9447.js.map": "/static/js/main.d09d9447.js.map",
     "105.2d4e178e.chunk.js.map": "/static/js/105.2d4e178e.chunk.js.map",
     "225.6ffd6c68.chunk.js.map": "/static/js/225.6ffd6c68.chunk.js.map",
-    "877.3fba6e7a.chunk.js.map": "/static/js/877.3fba6e7a.chunk.js.map",
+    "487.f743d523.chunk.js.map": "/static/js/487.f743d523.chunk.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map",
     "469.dabb823a.chunk.js.map": "/static/js/469.dabb823a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.189bf113.css",
-    "static/js/main.5ffb4c91.js"
+    "static/js/main.d09d9447.js"
   ]
 }
